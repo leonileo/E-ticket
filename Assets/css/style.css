@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Home-Section */
+
+.home{
+    height: 80vh;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.413)),url(../images/mulugeta-wolde-hYjIYsJuyVQ-unsplash.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.body_content{
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+.nav{
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+.logo{
+    font-size: 25px;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.nav ul{
+    list-style: none;
+    padding: 5px;
+    display: flex;
+}
+.nav ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff;
+    transition: .5s;
+}
+.nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+.body_content .text{
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text h1{
+    font-size: 45px;
+    color: #fff;
+}
+.text button{
+    margin: 20px;
+    padding: 10px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #fff;
+    transition: .2s;
+}
+.text button:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+/* Destination-section */
+
+.select_d {
+    /* min-height: 80vh; */
+    padding: 10px;
+    margin: 20px;
+}
+.select_d .form{
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+.select_d h1{
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: lightblue;
+}
+.form form{
+    padding: 10px;
+    align-items: center;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+}
+.form i{
+    color: lightblue;
+    font-size: 20px;
+}
+.form input{
+    margin-left: 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.D_box{
+    width: 1000px;
+    margin: 10px;
+    padding: 10px;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #eceaea;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+.D_container{
+    width: 420px;
+    padding: 5px;
+    margin: 2px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.D_container img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.txt{
+    margin: 5px;
+    margin-left: 0;
+    padding: 20px;
+    height: 2vh;
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    bottom: 4px;
+    border-radius: 10px;
+    transition: all .2s;
+}
+.D_container h2{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.D_container p{
+    margin: 10px;
+    font-size: 18px;
+    opacity: 0;
+    color: #ccc;
+}
+.D_container:hover .txt{
+    cursor: pointer;
+    height: 20vh; 
+}
+.D_container:hover p{
+    opacity: 1;
+}
+.selection_process{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select_t_day{
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+.st_box{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.today,.tommorrow,.s_tday{
+    width: 200px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    text-align: center;
+    transition: .2s;
+}
+.today{
+    color: #fff;
+    background-color: black;
+}
+.today:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+}
+.tommorrow:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.tommorrow{
+    color: #000;
+    letter-spacing: 2px;
+}
+.s_tday input{
+    outline: none;
+    background: none;
+    border: none;
+    letter-spacing: 4px;
+}
+.select_t_day .btn{
+    margin: 20px;
+    text-align: center;
+}
+.btn button{
+    width: 150px;
+    padding: 10px;
+    background: none;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn button:hover{
+    background-color: lightblue;
+    color: #fff;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width: 1800px) { 
+    .nav{
+        justify-content: space-between;
+    }
+    .text h1{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .selection_process{
+        width: 100%;
+        display: block;
+    }
+    .D_box{
+        width: 100%;
+    }
+    .select_t_day{
+        width: auto;
+    }
+    .st_box{
+        display: block;
+        text-align: center;
+    }
+    .today,.tommorrow,.s_tday{
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+    .D_box{
+        width: auto;
+        margin: 10px 0 10px 0;
+    }
+    .select_d h1,.se{
+        font-size: 25px;
+    }
+}
