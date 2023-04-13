@@ -106,7 +106,7 @@
     align-items: center;
 }
 .starting_destination{
-    width: 1000px;
+    width: 60%;
     margin: 10px;
     height: 50vh;
     background: #000;
@@ -117,16 +117,13 @@
     background-size: cover;
 }
 .starting_destination .aa{
+    width: 700px;
     display: flex;
     align-items: center;
     color: #fff;
 }
 .starting_destination .aa h1{
-    width: 500px;
     color: #fff;
-}
-.starting_destination .aa .name{
-    display: block;
 }
 .starting_destination .aa .name::after{
     content: '';
@@ -319,10 +316,17 @@
     .text p{
         font-size: 15px;
     }
+    .form form{
+        padding: 5px;
+    }
+    .select_d .title{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
     .selection_process{
-        width: auto;
         margin: 10px;
-        display: block;
+        
+    flex-direction: column-reverse;
     }
     .starting_destination{
         width: 100%;
@@ -330,6 +334,9 @@
         background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.671)), url(../images/small.jpg);
         background-size: cover;
         position: relative;
+    }
+    .starting_destination .aa h1{
+        width: 100%;
     }
     .starting_destination .aa p{
         background-color: #fff;
@@ -360,8 +367,24 @@
 }
 
 
-@media (max-width: 400px) { 
+@media (max-width: 700px) { 
     .D_container{
-        min-width: 20px;
+        min-width: 100px ;
     }
+    .select_t_day{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .D_container p{
+        height: 8vh; 
+    }
+    .D_container:hover .txt{
+        height: 18vh; 
+    }    
+    .swiper-pagination{
+        display: flex;
+        margin: 0 0 0 80px;
+    }
+    
 }
