@@ -10,8 +10,8 @@
 .home{
     height: 50vh;
     padding: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.413)),url(../images/mulugeta-wolde-hYjIYsJuyVQ-unsplash.jpg); 
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.364), rgba(2, 2, 2, 0.781)),url(../images/2.jpg);    
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -98,6 +98,13 @@
     outline: none;
 }
 
+/* selection_process */
+
+.selection_process{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .starting_destination{
     width: 1000px;
     margin: 10px;
@@ -112,49 +119,51 @@
 .starting_destination .aa{
     display: flex;
     align-items: center;
+    color: #fff;
 }
 .starting_destination .aa h1{
     width: 500px;
     color: #fff;
 }
-.selected_D{
-    width: 100%;
-    background-color: #cccccc45;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.starting_destination .aa .name{
+    display: block;
 }
-.selected_D .D_display{
-    padding: 10px;
-    width: 100%;
-    height: 15vh;
-    background-color: red;
+.starting_destination .aa .name::after{
+    content: '';
+    display: block;
+    width: auto;
+    height: 5px;
+    background-color: #fff;
 }
-.D_box{
-    width: 850px;
-    margin: 10px;
-    padding: 5px;
+.slide-container{
+    width: 50%;
     height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    background-color: #000;
+    background-color: #b1afafb2;
     border-radius: 10px;
-    overflow-y: scroll;
+}
+
+/* containers */
+
+.slide-content{
+    width: 950px;
+    padding: 9px;
+    border-radius: 10px;
 }
 .D_container{
-    width: 320px;
+    width: auto;
+    min-width: 320px;
+    height: 45vh;
     padding: 5px;
-    margin: 2px;
     position: relative;
     border-radius: 20px;
-    overflow: hidden;
 }
 .D_container img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
     border-radius: 20px;
+    transition: .2s;
 }
 .txt{
     margin: 5px;
@@ -164,9 +173,9 @@
     position: absolute;
     background-color: transparent;
     backdrop-filter: blur(10px);
-    bottom: 4px;
-    border-radius: 10px;
-    transition: all .2s;
+    bottom: 0px;
+    border-radius: 0 0 20px 20px;
+    transition: all .3s;
 }
 .D_container h2{
     text-align: center;
@@ -177,26 +186,59 @@
     letter-spacing: 5px;
 }
 .D_container p{
-    margin: 5px;
+    height: 7vh;
     font-size: 18px;
     opacity: 0;
     color: #ccc;
+    overflow: hidden;
+}
+.D_container button{
+    margin: 5px;
+    padding: 3px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
 }
 .D_container:hover .txt{
-    cursor: pointer;
     height: 12vh; 
 }
 .D_container:hover p{
     opacity: 1;
     font-size: 15px;
 }
-.selection_process{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.D_container button:hover{
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
 }
+.swiper-button-next,
+.swiper-button-prev{
+    width: 10px !important;
+    height: 20px !important;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+.swiper-button-next::before,
+.swiper-button-prev::before,
+.swiper-button-next::after, 
+.swiper-button-prev::after{
+    content: '';
+    color: #fff;
+    font-size: 20px !important;
+} 
+
+.swiper-pagination{
+    position: relative;
+    padding: 0 50px;
+}
+
 .select_t_day{
-    width: 50%;
+    margin: 0 50px;
     padding: 20px;
     border: 1px solid #000;
     border-radius: 20px;
@@ -204,7 +246,7 @@
 .st_box{
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .today,.tommorrow,.s_tday{
@@ -278,14 +320,31 @@
         font-size: 15px;
     }
     .selection_process{
-        width: 100%;
+        width: auto;
+        margin: 10px;
         display: block;
     }
-    .D_box{
+    .starting_destination{
         width: 100%;
+        margin: 0 0 10px 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.671)), url(../images/small.jpg);
+        background-size: cover;
+        position: relative;
     }
-    .select_t_day{
-        width: auto;
+    .starting_destination .aa p{
+        background-color: #fff;
+        color: #000 ;
+    }
+    .slide-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 880px){
+    .out{
+        display: flex;
+        justify-content: center;
     }
     .st_box{
         display: block;
@@ -295,11 +354,14 @@
         margin: 10px 0 0 0;
         width: 100%;
     }
-    .D_box{
-        width: auto;
-        margin: 10px 0 10px 0;
-    }
     .select_d h1,.se{
         font-size: 25px;
+    }
+}
+
+
+@media (max-width: 400px) { 
+    .D_container{
+        min-width: 20px;
     }
 }

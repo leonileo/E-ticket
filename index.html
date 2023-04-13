@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Ticket</title>
     <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/9a67d62607.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,76 +38,71 @@
             <div class="selection_process">
                 <div class="starting_destination">
                     <div class="aa">
-                        <h1>From Addis-Ababa To </h1>                        
+                        <h1>From Addis-Ababa To  <p class="name">_</p> </h1>                        
                     </div>
-                    <div class="selected_D">
-                        <div class="D_display">
-                            <div class="name">Bahrdar</div>
-                            <p>A beautifull place</p>
-                        </div>
-                    </div>
+                    
                 </div>
-                <div class="D_box"> 
-
-                    <div class="D_container">
-                        <img src="./Assets/images/hunde-gemechu-vSpuHmEGxcI-unsplash.jpg" alt="">
-                        <div class="txt">
-                            <h2>Gonder  </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed excepturi non dolore officia eligendi at porro numquam? Libero, sint!</p>
+                
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="D_container">
+                                    <img src="./Assets/images/hunde-gemechu-vSpuHmEGxcI-unsplash.jpg" alt="">
+                                    <div class="txt">
+                                        <h2>Gonder  </h2>
+                                        <p>Gondar, or Gonder, is a city in northern Ethiopia. It's known for the walled Fasil Ghebbi fortress.</p>
+                                        <button id="D2">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="D_container">
+                                    <img src="./Assets/images/daniele-levis-pelusi-_jf3I7YYtcQ-unsplash.jpg" alt="">
+                                    <div class="txt">
+                                        <h2>Hawassa </h2>
+                                        <p>Awasa, also called Hawassa, is a city in the Great Rift Valley of central Ethiopia. It lies at the eastern edge of large Lake Awasa, with its resident hippos.</p>
+                                        <button id="D2">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="D_container">
+                                    <img src="./Assets/images/lalibela.jpg" alt="">
+                                    <div class="txt">
+                                        <h2>Lalibela </h2>
+                                        <p>Lalibela is a town in the Amhara region of northern Ethiopia.</p>
+                                        <button id="D2">Select</button>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
                     </div>
-                    <div class="D_container">
-                        <img src="./Assets/images/hunde-gemechu-vSpuHmEGxcI-unsplash.jpg" alt="">
-                        <div class="txt">
-                            <h2>Gonder  </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed excepturi non dolore officia eligendi at porro numquam? Libero, sint!</p>
-                        </div>
-                    </div>
-                    <div class="D_container">
-                        <img src="./Assets/images/hunde-gemechu-vSpuHmEGxcI-unsplash.jpg" alt="">
-                        <div class="txt">
-                            <h2>Gonder  </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed excepturi non dolore officia eligendi at porro numquam? Libero, sint!</p>
-                        </div>
-                    </div><div class="D_container">
-                        <img src="./Assets/images/hunde-gemechu-vSpuHmEGxcI-unsplash.jpg" alt="">
-                        <div class="txt">
-                            <h2>Gonder  </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed excepturi non dolore officia eligendi at porro numquam? Libero, sint!</p>
-                        </div>
-                    </div>
-                    <div class="D_container">
-                        <img src="./Assets/images/mulugeta-wolde-hYjIYsJuyVQ-unsplash.jpg" alt="">
-                        <div class="txt">
-                            <h2>Lalibela</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed excepturi non dolore officia eligendi at porro numquam? Libero, sint!</p>
-                        </div>
-                    </div>  
-                    <div class="D_container">
-                        <img src="./Assets/images/mulugeta-wolde-hYjIYsJuyVQ-unsplash.jpg" alt="">
-                        <div class="txt">
-                            <h2>bahrdar</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed excepturi non dolore officia eligendi at porro numquam? Libero, sint!</p>
-                        </div>
-                    </div>                </div>
-            
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
+            
 
                 <div class="select_t_day">
                     <h1>Select Your Travel day</h1>
-                    <div class="st_box">
-                        <div class="today">
-                            <h2>Today</h2>
-                            <p>03 - 25 - 2023 </p>
-                        </div>
-                        <div class="tommorrow">
-                            <h2>Tommorrow</h2>
-                            <p>03 - 26 - 2023 </p>
+                    <div class="out">
+                        <div class="st_box">
+                            <div class="today">
+                                <h2>Today</h2>
+                                <p>03 - 25 - 2023 </p>
                             </div>
-                        <div class="s_tday">
-                            <input type="date" id="date" required>
+                            <div class="tommorrow">
+                                <h2>Tommorrow</h2>
+                                <p>03 - 26 - 2023 </p>
+                            </div>
+                            <div class="s_tday">
+                                <input type="date" id="date" required>
+                            </div>
                         </div>
                     </div>
+                        
                     <div class="btn">
                         <a href="./Assets/pages/Available_trips.html"><button> Next</button></a>
                     </div>
@@ -114,7 +110,9 @@
            
         </div>
 
-
-<script src="./Assets/js/main.js"></script>
+<script src="Assets/js/swiper-bundle.min.js"></script>
+<script src="Assets/js/main.js"></script>
+<script src="Assets/js/index  
+daniele-levis-pelusi-_jf3I7YYtcQ-unsplash.js"></script>
 </body>
-</html>
+</html><dfn></dfn>
