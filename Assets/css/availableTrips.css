@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+.nav{
+    background-color: #000;
+}
+.nav a{
+    margin-left: 10px;
+    font-family: 'dongle';
+    text-decoration: none;
+    color: #fff;
+}
+.trips-section{
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #fcfcfcc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    background-color: rgba(182, 182, 182, 0.568);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container h1{
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Dongle', sans-serif;
+    font-size: 50px;
+}
+.a_t{
+    padding: 10px;
+    /* background-color: rgba(150, 220, 243, 0.815); */
+}
+.info{
+    padding: 5px;
+    background-color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.trips{
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-in-out;
+}
+.trips .box{
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+    min-width: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: .2s;
+}
+.trips .box:hover{
+    background-color: #000000d7;
+    color: #fff;
+}
+.trips .title{
+    background-color: #000000d7;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.trips .box:hover .title{    
+    background-color: #ffffffec;
+    color: #000;
+}
+.trips .desc{
+    text-transform: capitalize;
+    text-align: center;
+}
+.trips .btn{
+    display: flex;
+    justify-content: center;
+}
+.trips button{
+    width: 50%;
+    background: none;
+    padding: 5px;
+    text-transform: capitalize;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: .2s;
+}
+.trips .box:hover button{
+    width: 60%;
+    cursor: pointer;
+    background-color: #ffffffec;
+    color:#000;
+}
+
+.trips button:hover.buses{
+    display: block;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination i {
+    margin:  0 10px 0 10px;
+    cursor: pointer;
+}
+.pagination .navBtn{
+    padding:  0 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.pagination .c1,
+.pagination .c2,
+.pagination .c3{
+    width: 5px;
+    height: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+}
+.pagination .c1{
+    width: 10px;
+    height: 10px;
+}
+/* Buses */
+
+.buses{
+    padding: 10px;
+}
+.buses h2{
+    padding: 10px;
+    background-color: #fff;
+    font-size: 20px;
+}
+.bus_list{   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.box{
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: 30vh;
+    background-color: red;
+    transition: .2s;
+}
+.box:hover img{
+    filter: blur(2px);
+}
+.box .bname{
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    color: #fff;
+    font-weight: 800;
+    bottom: 50%;
+}
+.box:hover .bname{
+    display: block;
+}
+.services{
+    padding: 10px 0;
+}
+.services h3{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 40px;
+}
+.services p{
+    margin: 1px;
+    padding: 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.services span{
+    float: right;
+    color: #000;
+    border-bottom: 1px solid #000;
+    display: none;
+}
+.services span:hover{
+    color: lightblue;
+    cursor: pointer;
+}
+.services .warning span{
+    background-color: red;
+    padding: 0 10px;
+}
+.services .warning span:hover{
+    color: #fff;
+}
+.payment{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.payment p{
+    margin: 0 10px;
+}

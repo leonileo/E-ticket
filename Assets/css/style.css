@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -57,10 +59,13 @@
     justify-content: center;
 }
 .text h1{
-    font-size: 45px;
+    font-size: 85px;
+    font-family: 'Dongle', sans-serif;
     color: #fff;
 }
-
+h1{
+    font-family: 'Dongle', sans-serif;
+}
 
 /* Destination-section */
 
@@ -145,6 +150,7 @@
     width: 950px;
     padding: 9px;
     border-radius: 10px;
+    overflow: hidden;
 }
 .D_container{
     width: auto;
@@ -229,11 +235,13 @@
     font-size: 20px !important;
 } 
 
-.swiper-pagination{
-    position: relative;
-    padding: 0 50px;
+.swiper-pagination-bullet{
+    background-color: #000 !important;
 }
-
+.navBtn{
+    color: #000;    
+    transition: color 0.3s ease;
+}
 .select_t_day{
     margin: 0 50px;
     padding: 20px;
